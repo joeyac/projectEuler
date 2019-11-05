@@ -20,6 +20,8 @@ for i in range(1, N + 1):
         for t in arr(k):
             if (i - t) >= 0:
                 ans[i] += coeff * ans[i - t]
+            else:
+                break
 
 for i in range(1, 6 + 1):
     print(ans[i] - 1)
